@@ -1,0 +1,5 @@
+sir1 = set(map(str, input('introdu primul sir de caractere: ').split()))
+sir2 = set(map(str, input('introdu al doilea sir de caractere: ').split()))
+print('a) caracterele care se întâlnesc cel puţin în unul dintre şiruri: ', sorted(sir1.union(sir2)))
+print('b) caracterele care apar în ambele şiruri: ', sorted(sir1.intersection(sir2)))
+print('c) caracterele care apar în primul şi nu apar în şirul al doilea: ', sorted(sir1.difference(sir2)))
